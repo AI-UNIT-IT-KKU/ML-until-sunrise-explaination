@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# R
+.Rhistory
+
+# Python cache
+__pycache__/
+*.pyc
