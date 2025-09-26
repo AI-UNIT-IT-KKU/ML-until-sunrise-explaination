@@ -15,7 +15,7 @@ the goal:
 this repo is organized into note files (markdown) that cover different ML topics step by step.  
 think of it like a growing handbook — I’ll keep adding more over time.  
 
-1. [Part 1 – Data Preprocessing] 
+1. [Part 1 – General Concepts in data] 
 2. [Part 2 – Regression] 
 3. [Part 3 – Classification]
 4. [Part 4 – Clustering]
