@@ -13,8 +13,10 @@ But keep in mind → preprocessing depends on the **type of data**:
 
 In this part, we only focus on **CSV/tabular preprocessing**, and later notes will cover their own preprocessing approaches.
 
-![Data Science Meme](https://i.imgur.com/your-meme-here.jpg)
-*When you're a data scientist mixing all libraries* 😂
+<p align="center">
+<img src="DATAAC.jpeg" alt="Data Science Meme" width="400">
+
+</p>
 
 ---
 
@@ -81,7 +83,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 ### 2. Upload data
 
-For this example, let's use some sample data ([Data.csv]()):
+For this example, let's use some sample data ([Data.csv](Data.csv)):
 
 This dataset is about predicting whether customers will buy a product based on their demographic information.
 ```python
@@ -107,7 +109,6 @@ Original Dataset:
 9   France  37.0  67000.0       Yes
 ```
 
-Normally you'd use: `data = pd.read_csv("file_name.csv")` for CSV files.
 
 ### 3. Split features (X) and target (y)
 
