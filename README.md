@@ -17,7 +17,7 @@ think of it like a growing handbook — I’ll keep adding more over time.
 
 <a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/Part1%E2%80%93DataPreprocessing%20/00_statring.md">Part 1 – Data Preprocessing</a>
 
-<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/Part1%E2%80%93DataPreprocessing%20/00_statring.md">Part 2 – Regression</a>
+<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/Part2%E2%80%93Regression/regression_guide.md">Part 2 – Regression</a>
 
 Part 3 – Classification
 
