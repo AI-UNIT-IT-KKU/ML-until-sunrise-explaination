@@ -199,13 +199,9 @@ Tune hyperparameters and improve features first. If residual plots clearly show 
 ### What is ensemble learning here?
 It means combining multiple models. A Random Forest trains many decision trees on random subsets of data and features, then averages their predictions. Key parameters: `n_estimators`, `random_state`.
 
-### What are RSS, TSS, R², and Adjusted R²?
-- RSS = Residual Sum of Squares (remaining error).
-- TSS = Total Sum of Squares (variation around the mean).
-- R² = 1 − RSS/TSS, proportion of variance explained.
-- Adjusted R² = R² with a penalty for adding useless features.
 
 
 
-Congrats… you just survived the rollercoaster called Regression
+<p align="center"><strong>Congrats… you just survived the rollercoaster called Regression</strong></p>
+
 chao
