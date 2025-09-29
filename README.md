@@ -15,8 +15,8 @@ the goal:
 this repo is organized into note files (markdown) that cover different ML topics step by step.  
 think of it like a growing handbook — I’ll keep adding more over time.  
 
-1. [Part 1 – Data Preprocessing](Part1–DataPreprocessing/00_starting.md)
-2. [Part 2 – Regression](Part2–Regression/regression_guide.md)
+1. [Part 1 – Data Preprocessing](part-1-data-preprocessing/00_starting.md)  
+2. [Part 2 – Regression](part-2-regression/regression_guide.md)
 3. [Part 3 – Classification]
 4. [Part 4 – Clustering]
 5. [Part 5 – Association Rule Learning] 
