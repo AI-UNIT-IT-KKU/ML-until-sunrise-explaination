@@ -37,7 +37,7 @@ x and an output variable y.
 ## Assumptions of Linear Regression
 
 <p align="center">
-    <img src="img/sds_poster_linear-assumptions.png" alt="Assumptions" width="40%">
+    <img src="img/sds_poster_linear-assumptions.png" alt="Assumptions" width="70%">
 </p>
 
 Linear regression relies on several key assumptions. When these are satisfied, the model gives more reliable estimates and predictions.
@@ -53,6 +53,8 @@ Linear regression relies on several key assumptions. When these are satisfied, t
 | **5. Lack of Multicollinearity** | **6. Outlier Check** |
 |---------------------------------|-----------------------|
 | Predictors should not be highly correlated with each other. High correlation makes coefficient estimates unstable. | Not a strict assumption, but important in practice. Outliers can strongly influence the regression line and skew results. |
+
+[to learn more click here ](https://www.geeksforgeeks.org/machine-learning/assumptions-of-linear-regression/)
 
 ---
 
