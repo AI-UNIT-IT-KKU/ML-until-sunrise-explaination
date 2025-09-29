@@ -15,16 +15,26 @@ the goal:
 this repo is organized into note files (markdown) that cover different ML topics step by step.  
 think of it like a growing handbook — I’ll keep adding more over time.  
 
-1. [Part 1 – Data Preprocessing](part-1-data-preprocessing/00_starting.md)  
-2. [Part 2 – Regression](part-2-regression/regression_guide.md)
-3. [Part 3 – Classification]
-4. [Part 4 – Clustering]
-5. [Part 5 – Association Rule Learning] 
-6. [Part 6 – Reinforcement Learning]
-7. [Part 7 – Natural Language Processing]  
-8. [Part 8 – Deep Learning]  
-9. [Part 9 – Dimensionality Reduction] 
-10. [Part 10 – Model Selection and Boosting] 
+<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/Part1%E2%80%93DataPreprocessing%20/00_statring.md">Part 1 – Data Preprocessing</a>
+
+<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/Part1%E2%80%93DataPreprocessing%20/00_statring.md">Part 2 – Regression</a>
+
+Part 3 – Classification
+
+Part 4 – Clustering
+
+Part 5 – Association Rule Learning
+
+Part 6 – Reinforcement Learning
+
+Part 7 – Natural Language Processing  
+
+Part 8 – Deep Learning
+
+Part 9 – Dimensionality Reduction
+
+Part 10 – Model Selection and Boosting
+
 
 ---
 
