@@ -62,7 +62,11 @@ Most classifiers can output `predict_proba`. Turning probabilities into labels r
 
 When one class dominates, a silly model can score high accuracy by predicting the majority class every time. That’s the paradox: great accuracy, useless model. Fix it by using stratified splits, measuring precision/recall or PR‑AUC, and balancing the training signal with class weights or with resampling.
 
-## CAP curve and AR, in plain words
+## CAP curve and AR
+
+<p align="center">
+    <img src="img/1_s7yC-hQlUhhRGUnl8N7dRQ.png" width="60%">
+</p>
 
 The **Cumulative Accuracy Profile (CAP)** answers a practical question: if you can only act on the top x% of cases ranked by model score, what fraction of the true positives would you capture? Plot cumulative captured positives vs the fraction of the population you contact. The **AR (Accuracy Ratio)** compares your model’s area under the CAP to a random model and to a perfect model
 
