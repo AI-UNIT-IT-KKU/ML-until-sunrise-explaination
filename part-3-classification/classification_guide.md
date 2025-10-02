@@ -1,11 +1,12 @@
 # Classification
 
-> Image placeholder: `assets/iceberg-classification.jpg` (use the meme you shared as the banner)
-
 ## What you’re learning
 
 Classification predicts a **category** for each example. Spam or not. Fraud or not. Tumor type A or B. We model a function that turns features into a probability or a class label. Most of the work is not the model; it’s making sure data, evaluation, and decisions are set up correctly.
 
+<p align="center">
+    <img src="img/1_aQygyuxzOEvIx8m8idsaGw.jpg" width="40%">
+</p>
 ## Your mental model in one paragraph
 
 Think of the model as a boundary drawer. It looks at the feature space and tries to separate classes with the cleanest boundary it can manage. Sometimes the world is nearly linear and a straight boundary works. Often it isn’t, and we bend the space (kernels, trees, ensembles) to get a better split. We measure how good that boundary is with metrics that reflect what we actually care about, not just raw accuracy.
@@ -73,6 +74,10 @@ A higher AR means your ranking is more useful in targeted actions like marketing
 
 Despite the name, it’s a classifier. It models the log‑odds of the positive class as a linear function of features, and uses maximum likelihood to fit coefficients. It’s fast, well‑calibrated, and easy to interpret. Works best when the decision boundary is roughly linear after appropriate transforms.
 
+<p align="center">
+    <img src="img/binary_logistic_regression_classification.jpg" width="40%">
+</p>
+
 ```python
 from sklearn.linear_model import LogisticRegression
 model = LogisticRegression(max_iter=300, C=1.0, penalty="l2", solver="lbfgs")
@@ -82,6 +87,10 @@ model = LogisticRegression(max_iter=300, C=1.0, penalty="l2", solver="lbfgs")
 
 No training phase beyond storing the data. To classify a new point, look at the k closest training points and vote. Sensitive to scaling and to `k`. Simple, can be strong on structured data with a good distance metric.
 
+<p align="center">
+    <img src="img/K-Nearest-Neighbors-(1)-660.png" width="50%">
+</p>
+
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 model = KNeighborsClassifier(n_neighbors=7, metric="minkowski", p=2)
@@ -90,6 +99,10 @@ model = KNeighborsClassifier(n_neighbors=7, metric="minkowski", p=2)
 ### Support Vector Machines (SVM)
 
 A margin maximizer. It finds the hyperplane that separates classes with the largest margin. When data aren’t linearly separable, the kernel trick implicitly lifts data into a higher‑dimensional space. Popular kernels: linear, polynomial, and RBF.
+
+<p align="center">
+    <img src="img/1bXlp7LVAPhIay-Pk0MxdlA.webp" width="40%">
+</p>
 
 ```python
 from sklearn.svm import SVC
@@ -101,6 +114,10 @@ rbf = SVC(kernel="rbf", C=1.0, gamma="scale", probability=True)
 
 Fast, probabilistic, and surprisingly effective with text or high‑dimensional sparse features. It applies Bayes’ rule with a strong independence assumption between features. Variants include GaussianNB for continuous features and MultinomialNB for counts.
 
+<p align="center">
+    <img src="img/0_J5MLEJwQqhW41wg6.png" width="40%">
+</p>
+
 ```python
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
 ```
@@ -108,6 +125,10 @@ from sklearn.naive_bayes import GaussianNB, MultinomialNB
 ### Decision Tree
 
 Grows an if‑else tree by splitting features to reduce impurity. Interpretable, handles nonlinearity and interactions automatically, no scaling needed, but can overfit—prune or limit depth.
+
+<p align="center">
+    <img src="img/Decision-Trees-modified-16.jpg" width="40%">
+</p>
 
 ```python
 from sklearn.tree import DecisionTreeClassifier
@@ -117,6 +138,10 @@ model = DecisionTreeClassifier(criterion="entropy", max_depth=None, random_state
 ### Random Forest
 
 An ensemble of many decision trees trained on bootstrapped samples and random feature subsets. Lower variance than a single tree, strong out‑of‑the‑box performance, feature importance built in.
+
+<p align="center">
+    <img src="img/74060RF image.jpg" width="40%">
+</p>
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
