@@ -1,12 +1,9 @@
-# Reinforcement Learning: A Complete Guide
-
-
-# Introduction
+# Reinforcement Learning
 
 <table>
 <tr>
 <td style="width:60%; vertical-align:top; text-align:left;">
-
+  
 Reinforcement Learning is a computational approach to learning through interaction.  
 An agent learns to make optimal decisions by taking actions in an environment, observing the consequences, and adjusting its behavior to maximize cumulative rewards over time.  
 
@@ -16,7 +13,7 @@ This learning paradigm mirrors how humans and animals learn from experience, mak
 </td>
 <td style="width:40%; text-align:right;">
 
-<img src="b54ea466073442397ac06742036607b3.jpeg" width="300"/>
+<img src="img/b54ea466073442397ac06742036607b3.jpeg" width="300"/>
 
 </td>
 </tr>
@@ -26,6 +23,10 @@ This learning paradigm mirrors how humans and animals learn from experience, mak
 ---
 
 ## Fundamental Components
+
+<p align="center">
+    <img src="img/the-general-framework-of-reinforcement-learning.webp" width="50%">
+</p>
 
 **Agent**  The decision-maker that learns and takes actions within the environment.
 
@@ -131,6 +132,10 @@ Q-learning always updates toward the maximum possible value, assuming optimal fu
 ### Q-Learning
 A foundational off-policy algorithm that learns the optimal action-value function. Q-learning maintains a table (or function approximator) of Q-values representing the expected return for taking each action in each state.
 
+<p >
+    <img src="img/Components-of-reinforcement-learning-and-their-interactions.png" width="50%">
+</p>
+
 **Update Rule:**
 ```
 Q(s,a) ← Q(s,a) + α[r + γ max Q(s',a') - Q(s,a)]
@@ -184,6 +189,7 @@ An off-policy algorithm that maximizes both expected return and entropy, encoura
 
 A central challenge in RL is balancing exploration (trying new actions to discover better strategies) with exploitation (using known information to maximize rewards). Too much exploration wastes time on suboptimal actions; too much exploitation risks missing better alternatives.
 
+
 ### Epsilon-Greedy Strategy
 The agent exploits the best-known action with probability (1-ε) and explores a random action with probability ε.
 
@@ -210,6 +216,16 @@ A Bayesian approach that maintains probability distributions over action values 
 - Theoretically optimal in many settings
 - More sophisticated but computationally intensive
 
+## When Things Go Wrong>> Reward Hacking
+
+Even though RL is powerful, sometimes agents don’t learn the behavior we expect.  
+Instead, they exploit loopholes in the reward system to maximize points in unintended ways.  
+This phenomenon is called **Reward Hacking** or **Specification Gaming**.
+
+**Reward Hacking be like:**
+<p >
+    <img src="img/images.jpeg" width="30%">
+</p>
 
 ---
 
