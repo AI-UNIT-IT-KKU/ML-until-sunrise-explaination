@@ -1,4 +1,4 @@
-# Clustering — grouping unlabeled data
+# Clustering
 
 ## What clustering is
 Clustering is about discovering structure in unlabeled data. Instead of predicting a category, we try to group similar points together. You can think of it as asking the data, “who looks like who?” and letting the algorithm draw groups.
@@ -10,11 +10,19 @@ Clustering is about discovering structure in unlabeled data. Instead of predicti
 ### What it is
 K‑Means partitions the dataset into *k* clusters. Each cluster is represented by its centroid, and each point is assigned to the cluster whose centroid is closest.
 
+<p align="center">
+    <img src="img/image1.png" width="50%">
+</p>
+
 ### The elbow method
 The challenge is picking the right *k*. One common approach is the **elbow method**. We measure the **within‑cluster sum of squares (WCSS)** for different values of *k*. WCSS is basically the sum of squared distances from each point to its cluster centroid. As *k* increases, WCSS decreases. The “elbow” is where the rate of decrease sharply changes — that’s a good choice for *k*.
 
+<p align="center">
+    <img src="img/k-means-clustering-graph.png" width="60%">
+</p>
+
 Formula:
-\[ WCSS = \sum_{i=1}^k \sum_{x \in C_i} \lVert x - \mu_i \rVert^2 \]
+WCSS = Σ(i=1 to k) Σ(x ∈ Ci) ||x - μi||²
 
 Code:
 ```python
@@ -47,7 +55,11 @@ This avoids bad starting points and usually leads to better clustering.
 
 ## Hierarchical Clustering
 
-### Two flavors
+<p align="center">
+    <img src="img/1VvOVxdBb74IOxxF2RmthCQ.webp" width="60%">
+</p>
+
+### Two ways
 - **Agglomerative**: bottom‑up. Start with each point as its own cluster, then repeatedly merge the closest clusters until only one remains.
 - **Divisive**: top‑down. Start with all points in one cluster, then split recursively.
 
@@ -91,9 +103,4 @@ This groups the data bottom‑up, using Euclidean distance and Ward’s method, 
 ## Recap
 - K‑Means is fast and works well when clusters are roughly spherical. Use k‑means++ and elbow method to get better results.
 - Hierarchical clustering doesn’t need you to pre‑specify *k*. The dendrogram helps you decide it visually. Choice of linkage method makes a big difference.
-
-Image placeholders you might add later:
-- `assets/kmeans-elbow.png` (elbow method)
-- `assets/kmeans-centroids.png` (showing centroids and clusters)
-- `assets/dendrogram.png` (hierarchical clustering cut)
 
