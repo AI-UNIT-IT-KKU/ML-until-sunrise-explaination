@@ -23,7 +23,7 @@ think of it like a growing handbook — I’ll keep adding more over time.
 
 <a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-4-clustring/clustring_guide.md">Part 4 – Clustering</a>
 
-Part 5 – Association Rule Learning
+<a href= "https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-5-Association-Rule/Association_Rule_guide.md">Part 5 – Association Rule Learning</a>
 
 Part 6 – Reinforcement Learning
 
