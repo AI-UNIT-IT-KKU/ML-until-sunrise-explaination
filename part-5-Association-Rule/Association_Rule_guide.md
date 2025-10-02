@@ -3,7 +3,7 @@
 ## What data mining is
 
 <p align="center">
-    <img src="img/DtxM7NLW4AI9uBZ.jpg" width="40%">
+    <img src="img/DtxM7NLW4AI9uBZ.jpg" width="26%">
 </p>
 
 Data mining is the broader process of analyzing large datasets to extract useful patterns and relationships. One of its key branches is **association rule learning**, which focuses on finding interesting rules between items in transactional data. Instead of predicting labels or grouping points, it uncovers co‑occurrence patterns, like “customers who buy bread also often buy butter.”
@@ -19,7 +19,7 @@ This family of models is about finding patterns like “people who buy X also te
 Apriori generates itemsets step by step: first 1‑item sets, then 2‑item sets, then 3‑item sets, and so on. At each step it only keeps the frequent ones. The key property is: if an itemset is frequent, then all its subsets must also be frequent. This lets us prune the search space dramatically.
 
 <p align="center">
-    <img src="img/1b1X3sV7WgElbWUZCYMOMrA (1).webp" width="40%">
+    <img src="img/1b1X3sV7WgElbWUZCYMOMrA (1).webp" width="65%">
 </p>
 
 ### The measures: support, confidence, lift
