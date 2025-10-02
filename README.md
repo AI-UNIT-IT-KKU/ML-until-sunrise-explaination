@@ -15,13 +15,13 @@ the goal:
 this repo is organized into note files (markdown) that cover different ML topics step by step.  
 think of it like a growing handbook — I’ll keep adding more over time.  
 
-<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/Part1%E2%80%93DataPreprocessing%20/00_statring.md">Part 1 – Data Preprocessing</a>
+<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-1-data-preprocessing/00_starting.md">Part 1 – Data Preprocessing</a>
 
-<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/Part2%E2%80%93Regression/regression_guide.md">Part 2 – Regression</a>
+<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-2-regression/regression_guide.md">Part 2 – Regression</a>
 
-Part 3 – Classification
+<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-3-classification/classification_guide.md">Part 3 – Classification</a>
 
-Part 4 – Clustering
+<a href="https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-4-clustring/clustring_guide.md">Part 4 – Clustering</a>
 
 Part 5 – Association Rule Learning
 
