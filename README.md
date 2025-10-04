@@ -25,7 +25,7 @@ think of it like a growing handbook — I’ll keep adding more over time.
 
 <a href= "https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-5-Association-Rule/Association_Rule_guide.md">Part 5 – Association Rule Learning</a>
 
-Part 6 – Reinforcement Learning
+<a href= "https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-6-Reinforcement_Learning/reinforcement_learning_guide.md">Part 6 – Reinforcement Learning</a>
 
 Part 7 – Natural Language Processing  
 
