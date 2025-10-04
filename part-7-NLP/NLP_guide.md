@@ -76,7 +76,11 @@ One limitation of classic embeddings is that each word gets a single vector, so 
 
 ## Memory enters the game: RNNs  
 
-Language is sequential. To capture sequences, we built **Recurrent Neural Networks (RNNs)**. They carry a hidden state forward word by word, remembering context. But memory fades with long sentences >>> **vanishing gradient problem**.  
+Language is sequential. To capture sequences, we built **Recurrent Neural Networks (RNNs)**. They carry a hidden state forward word by word, remembering context. But memory fades with long sentences >>> **vanishing gradient problem**:
+
+<p align="center">
+    <img src="img/pixar-finding-dory.png" width="40%">
+</p>
 
 ---
 
@@ -84,23 +88,38 @@ Language is sequential. To capture sequences, we built **Recurrent Neural Networ
 
 The fix was **LSTMs** and **GRUs**. With gates to decide what to keep or forget, they stretched memory over longer texts. Translation, speech recognition, and text generation became possible. Yet they were still slow, processing one token at a time.  
 
+<p align="center">
+    <img src="img/Screen-Shot-2022-06-20-at-9.41.36-PM-1.png" width="40%">
+</p>
+
 ---
 
 ## Translating sequences: Seq2Seq  
 
 Seq2Seq paired an **encoder** with a **decoder**. The encoder compressed a sentence into a vector, the decoder unfolded it. Elegant, but bottlenecked: long sentences collapsed under the weight of one vector.  
 
+<p align="center">
+    <img src="img/The-Basic-Seq2Seq-Model.png" width="40%">
+</p>
 ---
 
 ## Attention is all you need!!
 
 The breakthrough was **attention**. Instead of relying on one compressed vector, the decoder could “attend” to different words in the input with different weights. The model could focus on exactly what mattered.  
 
+<p align="center">
+    <img src="img/is-that-true-v0-hj4xviq6xcqd1.webp" width="40%">
+</p>
+
 ---
 
 ## Transformers  
 
 Transformers removed recurrence entirely. With **self-attention**, every token looks at every other token, all at once. **Multi-head attention** adds multiple perspectives, while **positional encodings** bring back order.  
+
+<p align="center">
+    <img src="img/425mi0.jpg" width="60%">
+</p>
 
 This architecture was faster, parallelizable, and far more accurate. It became the foundation of modern NLP.  
 
