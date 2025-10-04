@@ -27,7 +27,7 @@ think of it like a growing handbook — I’ll keep adding more over time.
 
 <a href= "https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-6-Reinforcement_Learning/reinforcement_learning_guide.md">Part 6 – Reinforcement Learning</a>
 
-Part 7 – Natural Language Processing  
+<a href= "https://github.com/AI-UNIT-IT-KKU/ML-until-sunrise-explaination/blob/main/part-7-NLP/NLP_guide.md">Part 7 – Natural Language Processing</a>
 
 Part 8 – Deep Learning
 
