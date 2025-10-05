@@ -1,10 +1,10 @@
 <p align="center">
-    <img src="img/AI_Microsoft_Research_Header_1920x720.png" width="60%">
+    <img src="part-8-CNN/img/AI_Microsoft_Research_Header_1920x720.png" width="100%">
 </p>
 
-# Machine Learning
+# *Machine Learning*
 
-## About this Repo  
+**About this Repo**
 
 This repo is my personal **learning journal** for Machine Learning — a mix of notes, explanations, and code experiments.  
 It’s not a textbook. It’s where I break down complex ideas, write in my own words, and test them in code.  
@@ -22,7 +22,7 @@ Machine Learning (ML) is a field of Artificial Intelligence that enables compute
 The model observes examples, finds relationships, and uses them to make predictions or decisions when it encounters new data.  
 
 <p align="center">
-    <img src="img/learn-machine-learning-meme-v0-tkluwayskwfd1.webp" width="40%">
+    <img src="part-8-CNN/img/learn-machine-learning-meme-v0-tkluwayskwfd1.webp" width="40%">
 </p>
 
 Mathematically, ML tries to approximate a function `f(x)` that maps inputs `x` to outputs `y`.  
