@@ -3,6 +3,10 @@
 If you’ve ever wondered how a machine “sees,” this repo takes you on that trip.  
 We’ll start from raw pixels — just numbers — and walk step by step into how a Convolutional Neural Network turns them into meaning, from edges to eyes to entire objects.  
 
+<p align="center">
+    <img src="img/10.webp" width="40%">
+</p>
+
 ---
 
 ## How Computers See Images
@@ -20,6 +24,10 @@ CNNs learn those patterns automatically — without us having to tell them what 
 
 ## Image Processing Basics — Convolution, Kernel, Padding, and Stride
 
+<p align="center">
+    <img src="img/7.png" width="50%">
+</p>
+
 ### Convolution
 The **convolution** layer is the first thing every CNN learns from.  
 You take a small filter (called a **kernel**, e.g. 3×3 or 5×5), slide it over the image, multiply the overlapping values, sum them up, and get one number.  
@@ -29,6 +37,11 @@ Each kernel learns to detect something: horizontal edges, vertical lines, textur
 Multiple filters create multiple feature maps, each focusing on different visual cues.
 
 ### Padding
+
+<p align="center">
+    <img src="img/6.webp" width="50%">
+</p>
+
 Sometimes when the kernel slides, it doesn’t fit perfectly — the edges of the image get smaller after every convolution.  
 **Padding** fixes that by adding zeros around the image borders so the output keeps the same size.  
 Without padding, your image would keep shrinking layer after layer.
@@ -47,6 +60,10 @@ So padding and stride are just two dials controlling how much detail you keep ve
 Convolution alone is linear — like drawing straight lines through data.  
 To make the network *learn complex shapes*, we use activation functions to introduce non-linearity.
 
+<p align="center">
+    <img src="img/1.png" width="60%">
+</p>
+
 - **ReLU (Rectified Linear Unit)** → `max(0, x)`   
   Kills negatives, keeps positives. Fast and widely used.
 - **Leaky ReLU** → lets a tiny negative leak through so neurons don’t die.  
@@ -64,6 +81,10 @@ With them, they become capable of learning curves, textures, and boundaries.
 Once we’ve extracted features, we don’t need every single pixel anymore.  
 **Pooling** reduces the spatial size but keeps essential information.
 
+<p align="center">
+    <img src="img/9.png" width="60%">
+</p>
+
 - **Max Pooling:** takes the maximum value from each 2×2 window.  
 - **Average Pooling:** takes the mean instead.
 
@@ -73,14 +94,33 @@ Pooling gives **translation invariance** — the model still recognizes a cat ev
 
 ## Flattening and Fully Connected Layers
 
+
+<table>
+<tr>
+<td style="width:60%; vertical-align:top; text-align:left;">
+  
 After several convolution + pooling stages, the image is now represented by a stack of feature maps.  
 To make a final decision, we **flatten** them into a single long vector and feed it into **Fully Connected (FC)** layers.  
 Every neuron in an FC layer connects to every neuron in the next layer.  
 That’s where all the extracted features combine to predict the final class.
 
+</td>
+<td style="width:40%; text-align:right;">
+
+<img src="img/2.webp" width="190"/>
+
+</td>
+</tr>
+</table>
+
+
 ---
 
 ## The Complete CNN Pipeline
+
+<p align="center">
+    <img src="img/3.jpeg" width="70%">
+</p>
 
 1. **Input Layer:** raw pixels.  
 2. **Convolution:** extract local patterns.  
@@ -137,6 +177,11 @@ Good CNNs generalize — they recognize *new* images, not just the old ones.
 ---
 
 ## CNN Tasks — What They Can Actually Do
+
+<p align="center">
+    <img src="img/5.png" width="70%">
+</p>
+
 
 ### Image Classification  
 Predict what’s in the image.  
